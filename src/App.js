@@ -6,8 +6,9 @@ function App() {
 
   return (
     <div className="App">
-      <motion.div className='card'>
+      <motion.div layout onClick={() => setIsOpen(!isOpen)} className='card'>
         <motion.h2>Framer Motion 🚀</motion.h2>
+        {isOpen && 
         <motion.div>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
           Soluta officiis, in est saepe voluptates obcaecati illum 
@@ -17,6 +18,7 @@ function App() {
           Aut, nihil.
           </p>
         </motion.div>
+        }
       </motion.div>
     </div>
  );
